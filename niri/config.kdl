@@ -1,7 +1,7 @@
 input {
     keyboard {
         xkb {
-            layout: "us"
+            layout "us"
             options "ctrl:swap_rwin_rctl,compose:ralt"
         }
     }
