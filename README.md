@@ -1,1 +1,3 @@
 # dotfiles
+
+hyprland foot swww
