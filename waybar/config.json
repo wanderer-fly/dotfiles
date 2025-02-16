@@ -76,7 +76,7 @@
         "on-click-right": "pavucontrol"
     },
         "custom/randwall": {
-        "format": "󰏘",
+        "format": "WALL",
         "on-click": "bash $HOME/.config/hypr/scripts/wallpaper.sh"
     }
 }
