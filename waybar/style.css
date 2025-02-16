@@ -88,6 +88,25 @@ window#waybar.PCSX2 #window {
 	padding: 5px 10px;
 }
 
+#mpd {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 26px;
+	background: #282a36;
+	transition: none;
+	color: #4d4d4d;
+	background: #5af78e;
+}
+
+#mpd.disconnected,
+#mpd.stopped {
+	color: #f8f8f2;
+	background: #282a36;
+}
+
 #tray {
     background: #282828;
     margin: 5px 5px 5px 5px;

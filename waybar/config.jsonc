@@ -7,7 +7,7 @@
     "margin-left": 0,
     "margin-right": 0,
     "spacing": 6,
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window", "mpd"],
     "modules-center": ["cpu", "memory", "disk"],
     "modules-right": ["tray", "custom/randwall", "network", "pulseaudio", "clock"],
     "hyprland/workspaces": {
@@ -29,6 +29,16 @@
         "format": "\uf061 {}",
         "separate-outputs": true
     },
+    "mpd": {
+		"tooltip": false,
+		"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+		"format-disconnected": "ﳌ",
+		"format-stopped": "",
+        "state-icons": {
+            "playing": "",
+            "paused": ""
+        }
+	},
     "tray": {
         "icon-size": 16,
         "spacing": 5
@@ -48,6 +58,11 @@
         "interval": 1,
         "format": " {used}G",
         "tooltip": false
+    },
+    "disk": {
+        "format": "󰋊 {}%",
+        "format-alt": "󰋊 {used}/{total} GiB",
+        "interval": 5
     },
     "network": {
         "format-wifi": "󰤨",
