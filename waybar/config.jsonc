@@ -50,14 +50,14 @@
         "tooltip": false
     },
     "network": {
-        "interval": 1,
-        "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": "\uf796 {bandwidthUpBits} {bandwidthDownBits}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "⚠ Disconnected",
-        "tooltip-format": " {ifname} {ipaddr}/{cidr} via {gwaddr}",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
+        "format-wifi": "󰤨",
+        "format-ethernet": " {ifname}: Aesthetic",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "󰤭",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{essid}",
+        "on-click-right": "nm-connection-editor"
+	},
     "pulseaudio": {
         "scroll-step": 5,
         "format": "{icon} {volume}%",
