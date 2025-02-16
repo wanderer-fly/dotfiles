@@ -9,7 +9,7 @@
     "spacing": 6,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["cpu", "memory", "disk"],
-    "modules-right": ["tray", "network", "pulseaudio", "clock"],
+    "modules-right": ["tray", "custom/randwall", "network", "pulseaudio", "clock"],
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": true,
@@ -74,5 +74,9 @@
             "default": ["", "", ""]
         },
         "on-click-right": "pavucontrol"
+    },
+        "custom/randwall": {
+        "format": "󰏘",
+        "on-click": "bash $HOME/.config/hypr/scripts/wallpaper.sh"
     }
 }
